@@ -28,7 +28,7 @@ variable "organizational_unit" {
 
 variable "street_address" {
   description = "The street address (STREET) property of the certificate subject distinguished name (DN)."
-  type        = string
+  type        = list(string)
   default     = null
 }
 
