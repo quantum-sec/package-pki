@@ -6,7 +6,7 @@ variable "cert_request_pem" {
 variable "ca_private_key_algorithm" {
   description = "The name of the algorithm for the provided CA private key."
   type        = string
-  default     = "ECDSA"
+  default     = "ECDSA" # tfsec:ignore:GEN001
 }
 
 variable "ca_private_key_pem" {
