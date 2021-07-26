@@ -24,6 +24,6 @@ jobs:
           parameters:
             name: UpdateInfrastructureModules
             displayName: Update Infrastructure Modules
-            srcRepository: package-pki.git
-            dstRepository: infrastructure-modules
+            packageName: package-pki
+            repository: infrastructure-modules
             condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
