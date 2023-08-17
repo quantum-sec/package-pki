@@ -3,7 +3,13 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 terraform {
-  required_version = ">= 0.12"
+  required_version = ">= 1.2"
+  required_providers {
+    tls = {
+      source  = "hashicorp/tls"
+      version = ">= 4.0"
+    }
+  }
 }
 
 resource "tls_locally_signed_cert" "cert" {
